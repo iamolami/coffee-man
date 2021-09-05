@@ -1,0 +1,49 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* =========== Tittle Font =============*/
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+/*============ Colors ============= */
+$primary-color:  #431307;
+$secondary-color-alt: rgb(182, 160, 160);
+$title-color: #0f0b0e;
+$text-color: #0f0b0e;
+$text-color-light: #A6A6A6;
+$body-color: #f3f0eb;;
+$container-color: #FFFFFF;
+$color-shadow: #BABECC;
+$color-white: #fff;
+$figure-color: #6ea753;
+$spx-color: #b6a0a0;
+$button-color-dark: #b27944;
+
+  /*========== Font and typography ==========*/
+  $body-font: 'Montserrat', sans-serif;
+  $title-font: 'Federo', sans-serif;
+  $biggest-font-size: 1.8rem;
+  $h1-font-size: 4rem;
+  $h2-font-size: 1.25rem;
+  $h3-font-size: 1rem;
+  $normal-font-size: .938rem;
+  $small-font-size: .813rem;
+  $smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  $font-medium: 500;
+  $font-semi-bold: 600;
+  $font-bold: 700;
+
+  /*========== Margin ==========*/
+  $mb-1: .5rem;
+  $mb-2: 1rem;
+  $mb-3: 1.5rem;
+  $mb-4: 2rem;
+  $mb-5: 2.5rem;
+  $mb-6: 3rem;
+  $pad-1: 10rem;
+  $pad-2: 10rem;
+
+  /*========== z index ==========*/
+  $z-tooltip: 10;
+  $z-fixed: 100;

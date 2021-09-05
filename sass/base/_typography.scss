@@ -1,0 +1,554 @@
+// ===== Taste a Good Coffee =====
+.about {
+    position: relative;
+    background-image: url(../images/about-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+
+    @include for_breakpoint(mobile) {
+        margin-top: 58rem;
+        display: block;
+        justify-content: none;
+        margin-right: -3rem;
+        height: 1200px;
+    }
+
+    &_box-1 {
+        position: relative;
+        flex-basis: 60%;
+        height: 800px;
+        text-align: center;
+
+        @include for_breakpoint(mobile) {
+            flex-basis: 100%;
+            height: 600px;
+        }
+    }
+
+    &_box-2 {
+        position: relative;
+        flex-basis: 40%;
+        height: 800px;
+        padding:18rem 10rem;
+
+        @include for_breakpoint(mobile) {
+            flex-basis: 100%;
+            height: 600px;
+            padding: 15rem 3rem;
+        }
+    }
+
+    &_img {
+        width: 95%;
+        height: 700px;
+        margin-top: 5rem;
+
+        @include for_breakpoint(mobile) {
+            width: 90%;
+            height: 600px;
+            margin-top: 10rem;
+        }
+    }
+
+    &_video {
+
+        &::after {
+            content: "";
+            background-image: url(../images/play.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 40%;
+            right: 40%;
+            width: 200px;
+            height: 200px;
+            transform: translate(50% -50%);
+
+            @include for_breakpoint(mobile) {
+                top: 40%;
+                right: 40%;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    &_main {
+        font-size: 4.9rem;
+        color: $color-white;
+        font-weight: 500;
+        font-family: $title-font;
+
+        @include for_breakpoint(mobile) {
+            width: 100%;
+            font-size: 4.5rem;
+        }
+    }
+
+    &_sub {
+        font-size: 1.5rem;
+        font-style: normal;
+        font-family: $body-font;
+        color: $spx-color;
+        line-height: 2.5rem;
+        margin-top: 2.5rem;
+    }
+
+    &_addition {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        @include for_breakpoint(mobile) {
+            margin-top: 3rem;
+            justify-content: start;
+        }
+    }
+
+    &_additional-part {
+        position: relative;
+        flex-basis: 45%;
+        height: 20vh;
+        text-align: right;
+        font-family: $body-font;
+        padding-top: 3rem;
+
+        @include for_breakpoint(mobile) {
+            flex-basis: 32%;
+        }
+    }
+
+    &_additional-main {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $spx-color;
+        margin-bottom: .6rem;
+
+        @include for_breakpoint(mobile) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &_additional-sub {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $color-white;
+        text-decoration: none;
+        margin-right: 1.5rem;
+
+        @include for_breakpoint(mobile) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &_add-01 {padding-right: 5rem;}
+
+    &_add-01,
+    &_add-02 {
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 25%;
+            left: 0;
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &_add-01::before{
+        background-image: url(../images/Vector.svg);
+    }
+
+    &_add-02::before {
+        background-image: url(../images/phone-icon.svg);
+    }
+}
+
+// service section
+.service {
+    margin-top: 10rem;
+
+    @include for_breakpoint(mobile) {
+        margin-top: 5rem;
+    }
+
+    &_container{
+        position: relative;
+        row-gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+        @include for_breakpoint(mobile) {
+            grid-template-columns: repeat(2, 300px);
+            column-gap: 4rem;
+            padding: 2rem;
+        }
+    }
+
+    &_box {
+        width: 90%;
+        height: 55vh;
+        text-align: center;
+        //background-color: red;
+    }
+
+    &_adjust {
+        width: 70%;
+
+        @include for_breakpoint(mobile) {
+            width: 60%;
+        }
+    }
+
+    &_textBox {
+        margin-top: 2rem;
+        position: relative;
+    }
+    
+    &_main {
+        font-weight: 500;
+        font-size: 2rem;
+        color: $primary-color;
+        font-family: $title-font;
+    }
+
+    &_line {
+        width: 80%;
+        height: 1px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-left: 3.7rem;
+        margin-top: 2.5rem;
+    }
+
+    &_order {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    &_price {
+        color: $figure-color;
+        font-family: $body-font;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    &_small {
+        font-size: 1.2rem;
+        vertical-align: super;
+    }
+}
+
+// Features
+.features {
+    width: 100%;
+    position: relative;
+    margin-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    @include for_breakpoint(mobile) {
+        margin-top: 14rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &_text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &_container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include for_breakpoint(mobile) {
+            justify-content: start;
+        }
+    }
+
+    &_box {
+        flex-basis: 27%;
+        height: 20vh;
+        //background-color: red;
+        margin: 2rem;
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+
+        @include for_breakpoint(mobile) {
+            flex-basis: 100%;
+        }
+    }
+
+    &_textBox {
+        margin-top: 1rem;
+    }
+
+    &_main {
+        font-size: 1.8rem;
+        font-family: $body-font;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &_sub {
+        font-size: 1.2rem;
+        font-family: $body-font;
+        line-height: 2rem;
+    }
+}
+
+/* Promotion */
+.action {
+    width: 100%;
+    height: 965px;
+    background-image: url(../images/action-bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 10rem;
+
+    @include for_breakpoint(mobile) {
+        margin-right: -10rem;
+        display: block;
+        height: 900px;
+    }
+
+    &_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15rem;
+
+        @include for_breakpoint(mobile) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+
+    &_box-1{
+        flex-basis: 35%;
+
+        @include for_breakpoint(mobile) {
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+
+    &_box-2 {
+        flex-basis: 49%;
+        text-align: right;
+
+        @include for_breakpoint(mobile) {
+            display: none;
+            flex-basis: 0%;
+            opacity: 0;
+        }
+    }
+
+    &_main {
+        font-size: 5rem;
+        font-weight: 300;
+        font-family: $title-font;
+        color: $color-white;
+        line-height: 6rem;
+    }
+
+    &_description {
+        font-size: 1.6rem;
+        color: $secondary-color-alt;
+        font-family: $body-font;
+        margin-top: 3rem;
+        line-height: 2.6rem;
+    }
+
+    &_count-down {
+        margin-top: 2.3rem;
+    }
+
+    &_countList {
+        display: inline-block;
+        font-size: 1.5rem;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+        color: $secondary-color-alt;
+        font-family: $body-font;
+    }
+
+    &_counter {
+        display: block;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        font-family: $title-font;
+        color: $color-white;
+        margin-bottom: 2rem;
+    }
+
+    #minutes,
+    #seconds {
+        color: $figure-color;
+    }
+
+    &_formBox {
+        margin-top: 3rem;
+    }
+
+    &_inputs {
+        display: flex;
+        justify-content: start;
+    }
+
+    &_input {
+        width: 49%;
+        height: 7vh;
+        border: none;
+        border-radius: 5px;
+        background-color: #231e21;
+        outline: none;
+        padding: 1rem 2rem;
+        font-family: $body-font;
+        font-size: 1.4rem;
+        color: $secondary-color-alt;
+
+        &::placeholder {
+            font-family: $body-font;
+            font-size: 1.4rem;
+            color: $secondary-color-alt;
+        }
+
+        &:not(:first-child) {
+            margin-left: 1.6rem;
+        }
+    }
+
+    &_textarea {
+        width: 100%;
+        height: 100px;
+        border: none;
+        border-radius: 5px;
+        background-color: #231e21;
+        outline: none;
+        padding: 1rem 2rem;
+        font-family: $body-font;
+        font-size: 1.4rem;
+        color: $secondary-color-alt;
+        margin-top: 2rem;
+        letter-spacing: normal;
+        line-height: 23.8px;
+        margin-bottom: 3rem;
+
+        &::placeholder {
+            font-family: $body-font;
+            font-size: 1.4rem;
+            color: $secondary-color-alt;
+        }
+    }
+}
+
+// ============================= Testimonials ============================
+.testimonials {
+    position: relative;
+    background-image: url(../images/testimonial-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -42px;
+    min-height: 568px;
+    background-color: #0f0b0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include for_breakpoint(mobile) {
+        margin-right: -3rem;
+    }
+    
+    .swiper {
+        width: 50%;
+        height: 50vh;
+
+        @include for_breakpoint(mobile) {
+            min-width: 100%;
+            height: 75vh;
+        }
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;   
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination span{
+        background-color: $color-white
+    }
+
+    &_main {
+        font-size: 4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        font-family: $title-font;
+        margin-bottom: 2.5rem;
+        letter-spacing: normal;
+    }
+
+    &_description {
+        font-size: 1.8rem;
+        color: $secondary-color-alt;
+        letter-spacing: normal;
+        line-height: 30px;
+        font-family: $body-font;
+    }
+
+    &_author {
+        margin-top: 2.5rem;
+        font-size: 2rem;
+        letter-spacing: normal;
+        font-weight: 500;
+        font-family: $title-font;
+        line-height: 21.6px;
+    }
+}

@@ -1,0 +1,77 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    @include for_breakpoint(mobile) {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &_container {
+        width: 100%;
+        height: 80vh;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+
+        @include for_breakpoint(mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &_box-1 {
+        width: 80%;
+        height: 70vh;
+        padding-left: 2rem;
+
+        @include for_breakpoint(mobile) {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    &_box-2 {
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+
+        @include for_breakpoint(mobile) {
+            margin-top: 12rem;
+        }
+    }
+
+    &_img {
+        width: 60%;
+    }
+
+    &_main {
+        margin-top: 10rem;
+        font-size: 4rem;
+        font-family: $title-font;
+        color: $primary-color;
+
+       @include for_breakpoint(mobile) {
+           //text-align: center;
+       }
+    }
+
+    &_sub {
+        font-size: 1.2rem;
+        color: $title-color;
+        margin-top: 3.5rem;
+        line-height: 2.5rem;
+        font-family: $body-font;
+
+        @include for_breakpoint(mobile) {
+            //text-align: center;
+        }
+    }
+
+    &_buttonCont {
+        margin-top: 4.5rem;
+    }
+}

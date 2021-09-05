@@ -1,0 +1,20 @@
+.mv-right {float: right;}
+.mv-left{
+    float: left;
+    margin-left: 30%;
+}
+.bx-cart-alt {font-size: 2.5rem; color: $text-color;}
+.phone {margin-right: 0rem;}
+.call {margin-right: 4.3rem;}
+
+.shift-up {
+    margin-top: -5rem;
+
+    @include for_breakpoint(mobile) {
+        margin-top: 5rem;
+    }
+}
+.shift-down {margin-top: 5rem;}
+.mv-down {
+    margin-top: 3rem;
+}

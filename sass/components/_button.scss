@@ -1,0 +1,114 @@
+.header_btn {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $color-white;
+    cursor: pointer;
+    font-family: $body-font;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.header {
+
+    &_btn-1,
+    &_btn-2 {
+        border-radius: 0.3125rem;
+        padding: 1.4rem 7rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: $body-font;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.85;
+        }
+
+        @include for_breakpoint(mobile) {
+            padding: 1.2rem 4rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    }
+    
+    &_btn-2 {
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        margin-left: 3rem;
+        color: $title-color;
+
+        @include for_breakpoint(mobile) {
+            float: left;
+        }
+    }
+
+    &_btn-1 {
+        background-color: $primary-color;
+        border: none;
+        color: $color-white;
+
+        @include for_breakpoint(mobile) {
+            float: left;
+        }
+    }
+}
+
+.about_btn {
+    background-color: $button-color-dark;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $color-white;
+    cursor: pointer;
+    font-family: $body-font;
+    text-transform: uppercase;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        opacity: 0.85;
+    }
+
+    @include for_breakpoint(mobile) {
+        position: absolute;
+        top: 69%;
+        right: 10%;
+    }
+}
+
+.action_btn {
+
+    @include for_breakpoint(mobile) {
+        top: 82%;
+        right: 7%;
+    }
+}
+
+.service_button {
+    width: 40px;
+    height: 40px;
+    background-color: $primary-color;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: $body-font;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    transition: opacity 300ms ease-in-out;
+
+    .bx-cart-alt {
+        color: $color-white;
+    }
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
